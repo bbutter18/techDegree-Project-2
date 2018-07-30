@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1011" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comic Book Bold Italic.otf">
+            <string>ComicBook-BoldItalic</string>
+        </array>
+        <array key="Comic Book Bold.otf">
+            <string>ComicBook-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Quiz_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hkb-S2-zBu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RgQ-cC-2wL">
+                                <rect key="frame" x="31" y="456" width="312" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zT-hM-leu">
+                                        <rect key="frame" x="0.0" y="0.0" width="312" height="45"/>
+                                        <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="17"/>
+                                        <state key="normal" title="Choice1" backgroundImage="comic-text-bubble-left">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Choice1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7o-7a-eZm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWH-bc-QAi">
+                                        <rect key="frame" x="0.0" y="45" width="312" height="45"/>
+                                        <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="17"/>
+                                        <state key="normal" title="Choice2" backgroundImage="comic-text-bubble-right">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Choice2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PCd-tA-ZiJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwW-4J-tYd">
+                                        <rect key="frame" x="0.0" y="90" width="312" height="45"/>
+                                        <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="17"/>
+                                        <state key="normal" title="Choice3" backgroundImage="comic-text-bubble-left">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Choice3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5KD-e4-Gmk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pit-Gs-o2k">
+                                        <rect key="frame" x="0.0" y="135" width="312" height="45"/>
+                                        <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="17"/>
+                                        <state key="normal" title="Choice4" backgroundImage="comic-text-bubble-right">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Choice4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x1v-4Z-Nua"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;What was the year that the comic supervillain 'Venom' first appeared in the comics?&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhL-Mq-Mgl">
+                                <rect key="frame" x="46" y="64" width="284" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ComicBook-BoldItalic" family="Comic Book" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5Y-8h-Sxe">
+                                <rect key="frame" x="51" y="259" width="273" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" backgroundImage="playAgain-Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9Z-2C-wEI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hkb-S2-zBu" secondAttribute="trailing" id="Jyc-2K-WER"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hkb-S2-zBu" secondAttribute="bottom" id="KjW-Me-TJU"/>
+                            <constraint firstItem="Hkb-S2-zBu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lIM-dS-bER"/>
+                            <constraint firstItem="Hkb-S2-zBu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nfT-oF-sK2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Choice1" destination="4zT-hM-leu" id="K5s-mQ-WLI"/>
+                        <outlet property="Choice2" destination="YWH-bc-QAi" id="apr-zw-7OL"/>
+                        <outlet property="Choice3" destination="rwW-4J-tYd" id="mxo-cb-ueR"/>
+                        <outlet property="Choice4" destination="Pit-Gs-o2k" id="gz8-8Q-NcB"/>
+                        <outlet property="PlayAgain" destination="A5Y-8h-Sxe" id="Z1u-UU-hcT"/>
+                        <outlet property="backgroundImage" destination="Hkb-S2-zBu" id="B8F-7T-BSg"/>
+                        <outlet property="textField" destination="HhL-Mq-Mgl" id="6rG-aI-zSj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="comic-text-bubble-left" width="312" height="45"/>
+        <image name="comic-text-bubble-right" width="312" height="45"/>
+        <image name="playAgain-Button" width="380" height="205"/>
+    </resources>
+</document>
